@@ -18,7 +18,7 @@ public class PostCard : MonoBehaviour
 	{
 		if (UserService.user.points <= 0)
 		{
-			AlertsService.makeAlert("Sem folhas", "Você não tem folhas para dar. Plante mudas, participe de missões ou faça postagens para ganhar mais.", "OK");
+			AlertsService.makeAlert("Sem pontos", "Você não tem pontos para dar. Participe de missões ou faça postagens para ganhar mais.", "OK");
 			return;
 		}
 
