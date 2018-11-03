@@ -229,7 +229,7 @@ public class MissionController : ScreenController
 
 	private int GetSelectedGroupId (string groupName)
 	{
-		if (MissionsService.mission.is_grupal && groupName != null && GroupsService.groups.Length > 0)
+		if (GroupsService.groups != null && GroupsService.groups.Length > 0)
 			foreach (Group group in GroupsService.groups)
 				if (group.name == groupName)
 					return group._id;
